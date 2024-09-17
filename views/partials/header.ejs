@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dynamics.css">
+    <title>AppZapp</title>
+</head>
+<body class="alignColumn spaceBetween dark" onload="checkLightMode('<%= light %>'); transparent();">
+    <header class="dark">
+        <div class="alignRow spaceBetween">
+            <div>
+                <a href="/" class="pages blueFont"><h1>AppZapp</h1></a>
+            </div>
+            <div>
+                <a href="/about" class="pages blueFont"><h2>About</h2></a>
+                <a href="/dark" class="pages"><h2>
+
+                    <% if( light == true ) { %>
+                        ☀️
+                    <% } else { %>
+                        🌙
+                    <% } %>
+
+                </h2></a>
+            </div>
+        </div>
+        <hr class="dark">
+    </header>

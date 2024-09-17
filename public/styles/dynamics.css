@@ -1,0 +1,66 @@
+.dark {
+    background-color: #1f1f1f;
+    border-color: black;
+}
+
+.dark2 {
+    background-color: #0f0f0f;
+}
+
+.darkText {
+    color: white;
+}
+
+.light {
+    background-color: #f1f1f1;
+    border-color: lightgray;
+}
+
+.light2 {
+    background-color: lightgray;
+}
+
+.lightText {
+    color: black;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutImg {
+        margin: 1rem 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .socialMedia span {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .aboutImg img {
+        height: 250px;
+        width: 250px;
+        object-position: 0 -40px;
+    }
+
+    .center {
+        width: 90%;
+    }
+}

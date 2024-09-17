@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %>
+<main>
+    
+    <div class="center">
+    <% if (locals.posts) { %>
+        
+        <ul class="margin0">
+            <% for (let i = 0; i < posts.length; i++){ %>
+
+                <li>
+
+                    <% if (i !== 0) { %>
+                        <hr class="dark">
+                    <% } %>
+
+                    <div class="alignRow spaceBetween">
+
+                        <p class="postInfo alignRow darkText">
+                            <img src="/images/JPGs/360_F_570710660_Jana1ujcJyQTiT2rIzvfmyXzXamVcby8.jpg" class="profilePic">
+                            @<%= posts[i].user %> <%= posts[i].time %>
+                        </p>
+
+                        <div id="oa<%= i %>" class="optionsAll positionRelative alignRow">
+
+                            <div id="oc<%= i %>" class="optionsCard card hidden dark2">
+
+                                <form action="/edit" method="post">
+                                    <input type="submit" class="darkText" name=<%= i; %> value="edit" class="margin0">
+                                </form>
+                
+                                <form action="/delete" method="post">
+                                    <input type="submit" class="darkText" name=<%= i; %> value="delete" class="margin0">
+                                </form>
+                
+                            </div>
+
+                            <button id="ob<%= i %>" class="optionsButton button margin0 dark2 darkText" onclick="showOptionsCard('<%= i; %>')">
+                                •••
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <span class="darkText">
+                        <%- posts[i].text; %>
+                    </span>
+
+                </li>
+
+            <% } %>
+        </ul>
+    <% } %>
+    </div>
+
+    <div class="newPost alignColumn">
+
+        <div class="newPostCard card blueBack hidden">
+            <div class="alignColumn spaceArround">
+                <a href="/editor"><button>✒️</button></a>
+
+                <a href="/clear"><button>🗑️</button></a>
+            </div>
+        </div>
+
+        <button class="newPostButton button margin0 blueBack" onclick="showNewPostCard()">+</button>
+
+    </div>
+
+</main>
+
+<%- include("partials/footer.ejs") %>

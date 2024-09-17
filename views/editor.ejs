@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+<div class="center">
+    
+<% if (locals.index) { %>
+    <form action="/editDone" method="post">
+
+        <textarea class="user dark darkText" spellcheck="false" name="user" placeholder="User:" required><%= posts[index].user %></textarea>
+        <textarea class="text dark darkText" spellcheck="false" name="text" placeholder="Type:" required><%= posts[index].text %></textarea>
+
+        <div class="newPost alignColumn">
+            <input type="submit" class="button blueBack margin0" value="✉️">
+        </div>
+    </form>
+
+<% } else { %>
+    <form action="/create" method="post">
+
+        <textarea class="user dark darkText" spellcheck="false" name="user" placeholder="User:" required></textarea>
+        <textarea class="text dark darkText" spellcheck="false" name="text" placeholder="Type:" required></textarea>
+        
+        <div class="newPost alignColumn">
+            <input type="submit" class="button blueBack margin0" value="✉️">
+        </div>
+    </form>
+<% } %>
+
+</div>
+</main>
+
+<%- include("partials/footer.ejs") %>

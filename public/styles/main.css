@@ -1,0 +1,242 @@
+html {
+    font-family: sans-serif;
+    min-height: 100%;
+    margin: 0; 
+}
+
+body {
+    min-height: 100vh;
+    margin: 0; 
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    padding-top: 80px;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+hr {
+    margin: 0;
+    border-style: solid;
+    border-top: 0;
+    border-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+footer hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.blueFont {
+    color: #3090f0;
+}
+
+.blueBack {
+    background-color: #3090f0;
+}
+
+.margin0 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.center{
+    margin: 0 auto;
+    width: 70%;
+    align-self: center;
+}
+
+.alignRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.alignColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceArround {
+    justify-content: space-around;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.pages {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.card {
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    border: 0;
+}
+
+.profilePic {
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.socialMedia img {
+    height: 20px;
+    width: auto;
+}
+
+.postInfo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.optionsButton {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.optionsCard {
+    right: 40px;
+}
+
+.optionsCard input {
+    width: 80px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.newPost {  
+    position: fixed;
+    top: 80%;
+    left: 85%;
+    width: 15%;
+}
+
+.newPostButton {
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.newPostCard {
+    height: 80px;
+    width: 40px;
+    bottom: 50px;
+}
+
+.newPostCard div {
+    height: 80px;
+    width: 40px;
+}
+
+.newPostCard div * {
+    display: block; 
+    margin: auto;
+    border: 0;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.user {
+    font-family: sans-serif;
+    width: 100%;
+    height: 30px;
+    padding: 6px 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+}
+
+.text {
+    font-family: sans-serif;
+    width: 100%;
+    height: 500px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+}
+
+.about {
+    width: 100%;
+}
+
+.aboutImg{
+    margin: 1rem 20px 1rem 0;
+}
+
+.aboutImg img {
+    display: block;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 -56px;
+    margin-bottom: 1rem;
+}
