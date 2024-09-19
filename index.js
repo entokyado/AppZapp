@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const "/" = "AppZapp/"
 var bool = Boolean(0);
 var value;
 
